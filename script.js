@@ -24,3 +24,5 @@ console.log(isNaN(noNumero)); // true
 // Método 3: parseFloat
 let decimalString = "123.456";
 console.log(parseFloat(decimalString)); // 123.456
+
+        //BOOL
