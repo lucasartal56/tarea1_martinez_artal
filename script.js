@@ -62,4 +62,19 @@ console.log(parseFloat(decimalString)); // 123.456
         
         // Método 3: Object.hasOwn
         console.log(Object.hasOwn(persona, 'nombre')); // true
+
+        //ARRAY
+        let frutas = ['manzana', 'banana', 'naranja', 'uva'];
+
+        // Método 1: find
+        let fruta = frutas.find(f => f === 'naranja');
+        console.log(fruta); // "naranja"
+        
+        // Método 2: some
+        let tieneUva = frutas.some(f => f === 'uva');
+        console.log(tieneUva); // true
+        
+        // Método 3: every
+        let todasTienenA = frutas.every(f => f.includes('a'));
+        console.log(todasTienenA); // true
         
