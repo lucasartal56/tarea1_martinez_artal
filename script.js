@@ -26,3 +26,14 @@ let decimalString = "123.456";
 console.log(parseFloat(decimalString)); // 123.456
 
         //BOOL
+        let isAvailable = false;
+
+        // Método 1: Boolean constructor
+        console.log(Boolean(0)); // false
+        
+        // Método 2: typeof
+        console.log(typeof isAvailable); // "boolean"
+        
+        // Método 3: Double Negation
+        console.log(!!1); // true
+        
