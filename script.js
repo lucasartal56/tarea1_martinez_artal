@@ -37,3 +37,29 @@ console.log(parseFloat(decimalString)); // 123.456
         // Método 3: Double Negation
         console.log(!!1); // true
         
+        //OBJECT
+        let persona = {
+            nombre: 'Juan',
+            edad: 30,
+            profesion: 'Ingeniero',
+            direccion: {
+                ciudad: 'Madrid',
+                pais: 'España'
+            },
+            saludar: function() {
+                return `Hola, mi nombre es ${this.nombre}`;
+            }
+        };
+        
+        // Método 1: Object.assign
+        let copiaPersona = Object.assign({}, persona);
+        console.log(copiaPersona); // Copia del objeto persona
+        
+        // Método 2: Object.freeze
+        Object.freeze(persona);
+        persona.edad = 31; // No se puede modificar
+        console.log(persona.edad); // 30
+        
+        // Método 3: Object.hasOwn
+        console.log(Object.hasOwn(persona, 'nombre')); // true
+        
